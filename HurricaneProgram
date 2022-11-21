@@ -1,0 +1,37 @@
+using System;
+
+namespace Hurricane
+{
+    class Hurricane
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please Enter the wind speed in Miles per Hour");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num < 74)
+            {
+                Console.WriteLine("Not a Hurricane");
+            }
+            else if (num >= 74 & num <= 95)
+            {
+                Console.WriteLine("Catagory 1 Hurricane");
+            }
+            else if (num >= 96 & num <= 110)
+            {
+                Console.WriteLine("Catagory 2 Hurricane");
+            }
+            else if (num >= 111 & num <= 129)
+            {
+                Console.WriteLine("Catagory 3 Hurricane");
+            }
+            else if (num >= 130 & num <= 156)
+            {
+                Console.WriteLine("Catagory 4 Hurricane");
+            }
+            else if (num >= 157)
+            {
+                Console.WriteLine("Catagory 5 Hurricane");
+            }
+        }
+    }
+}
